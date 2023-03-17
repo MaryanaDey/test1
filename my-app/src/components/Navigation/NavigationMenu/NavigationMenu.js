@@ -47,7 +47,7 @@ const Item = styled.li`
 
 const StyledNavLink = styled(NavLink)`
   display: flex;
-  justify-content: center;
+  justify-content:space-between;;
   align-items: center;
   width: 33px;
   height: 33px;
