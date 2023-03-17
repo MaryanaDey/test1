@@ -31,7 +31,8 @@ function App() {
       <Section title="Топ недели" >
         <PaintingList items={paintings} />
       </Section>
-       <Section  title="лучшее"/>
+      <Section title="лучшее" />
+      <h1>Hello</h1>
       
       {/* <HomePage
         imageUrl={paintings[0].url}

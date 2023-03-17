@@ -70,6 +70,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 настройка vs
+Настройка pre-commit хуков
+
+npm install --save-dev prettier eslint
+
+Инициализация lint-staged и husky
+npx mrm lint-staged
+Пользователям Windows необходимо выполнить следующую команду. Она делает тоже самое.
+npx mrm@2 lint-staged
+
 1 .prettier.json
 2 npm install --save-dev husky lint-staged
 3 settingd => autoSave => onFocusChange
@@ -78,4 +87,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 6 "lint-staged": {
 "_.{jsx,js}": "eslint --cache --fix",
 "_.{js,jsx,css,md,css}": "prettier --write"
+}
+
+8 .huskyrc
+{
+"hooks": {
+"pre-commit": "lint-staged"
+}
+}
+
+9 .lintstagedrc
+{
+"src/**/\*.{json,css,scss,md}": ["prettier --write"],
+"src/**/\*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"]
 }
