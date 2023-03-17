@@ -7,5 +7,9 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.4"
+  },
+    "lint-staged": {
+    "*.{jsx,js}": "eslint --cache --fix",
+    "*.{js,jsx,css,md,css}": "prettier --write"
   }
 }

@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+настройка vs
+1 .prettier.json
+2 npm install --save-dev husky lint-staged
+3 settingd => autoSave => onFocusChange
+4 formatOnSave:true
+5 codeActionOnSave: true
+6 "lint-staged": {
+"_.{jsx,js}": "eslint --cache --fix",
+"_.{js,jsx,css,md,css}": "prettier --write"
+}
